@@ -17,6 +17,9 @@
                 <option>Solo nombre</option>
             </select>
             <br><br>
+            <label>Nombre o pseudónimo que quieres mostrar:</label>
+            <input type="text" name="nombre_mostrado">
+            <br><br>
             <label>¿Qué tipo de experiencia quieres compartir?</label>
             <select name="tipo">
                 <option>Memorias</option>
@@ -31,8 +34,35 @@
                 <option>Otro</option>
             </select>
             <br><br>
-            <label>Cuéntanos tu experiencia:</label>
+            <label>¿Qué edad tienes actualmente?</label>
+            <input type="number" name="edad_actual">
+            <br><br>
+            <label>¿Qué edad tenías cuando ocurrió?</label>
+            <input type="number" name="edad_evento">
+            <br><br>
+            <label>¿Dónde ocurrió?</label>
+            <input type="text" name="lugar">
+            <br><br>
+            <label>¿Cuándo ocurrió aproximadamente?</label>
+            <input type="text" name="fecha_aproximada">
+            <br><br>
+            <label>Cuéntanos qué ocurrió, con tus propias palabras:</label>
             <textarea name="experiencia"></textarea>
+            <br><br>
+            <label>¿Cuándo comenzaste a pensar que lo ocurrido era inexplicable?</label>
+            <textarea name="momento_inexplicable"></textarea>
+            <br><br>
+            <label>¿Hay algo más que quieras agregar?</label>
+            <textarea name="informacion_adicional"></textarea>
+            <br><br>
+            <label>¿Tienes algún material adicional relacionado con tu experiencia?</label>
+            <select name="material">
+            <option>Fotografía</option>
+            <option>Video</option>
+            <option>Audio</option>
+            <option>Documento</option>
+            <option>Ninguno</option>
+            </select>
             <br><br>
             <label>¿Qué autorizas que hagamos con tu experiencia?</label>
             <select name="autorizacion">
@@ -47,6 +77,11 @@
                 <option>Sí, autorizo</option>
                 <option>No autorizo</option>
             </select>
+            <br><br>
+            <label>Confirmo que las opciones que he seleccionado reflejan mi autorización sobre el uso de esta experiencia.</label>
+            <input type="checkbox" name="confirmacion_autorizacion">
+            <label>Confirmo que la experiencia que comparto corresponde a mi propio relato y que la información proporcionada es correcta según mi conocimiento.</label>
+            <input type="checkbox" name="confirmacion_relato">
             <br><br>
             <button>Enviar experiencia</button>
         </form>
