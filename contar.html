@@ -155,10 +155,13 @@
 const aparicion = document.querySelector('select[name="aparicion"]');
 const nombreMostrado = document.querySelector('input[name="nombre_mostrado"]');
 aparicion.addEventListener('change', function() {
-    if (aparicion.value) {
+    if (aparicion.value === 'Anónimo') {
         nombreMostrado.style.display = 'none';
     }
 });
+if (aparicion.value === 'Anónimo') {
+    nombreMostrado.style.display = 'none';
+}   
 </script>
 </body>
 </html>
