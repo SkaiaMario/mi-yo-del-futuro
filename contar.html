@@ -75,7 +75,7 @@
             </select>
             <br><br>
             <label>Nombre o pseudónimo que quieres mostrar:</label>
-            <input type="text" name="nombre_mostrado">
+            <input type="text" name="nombre_mostrado" style="display: none;">
             <br><br>
             <label>Si quieres que podamos contactarte, puedes dejarnos un correo electrónico.</label>
             <input type="email" name="correo">
@@ -162,7 +162,7 @@ aparicion.addEventListener('change', function() {
         nombreMostrado.style.display = 'block';
     }
 });
-if (aparicion.value === 'Pseudónimo') {
+if (aparicion.value === 'Anónimo') {
     nombreMostrado.style.display = 'none';
 }  
 </script>
