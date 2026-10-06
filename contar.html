@@ -59,7 +59,8 @@
         <p>Cuéntanos qué ocurrió, con tus propias palabras.</p>
         <form action="https://submit-form.com/defViP7ZM" method="POST">
             <label>¿En qué idioma quieres compartir tu experiencia?</label>
-            <select name="idioma">
+            <select name="idioma" required>
+                <option value="">Selecciona una opción</option>
                 <option>Español</option>
                 <option>English</option>
                 <option>Français</option>
@@ -67,7 +68,8 @@
             </select>
             <br><br>    
             <label>¿Cómo quieres aparecer?</label>
-            <select name="aparicion">
+            <select name="aparicion" required>
+                <option value="">Selecciona una opción</option>
                 <option>Anónimo</option>
                 <option>Pseudónimo</option>
                 <option>Nombre completo</option>
@@ -84,7 +86,8 @@
             <textarea name="testigos"></textarea>
             <br><br>  
             <label>¿Qué tipo de experiencia quieres compartir?</label>
-            <select name="tipo">
+            <select name="tipo" required>
+                <option value="">Selecciona una opción</option>
                 <option>Memorias</option>
                 <option>Sueños</option>
                 <option>Déjà vu</option>
@@ -110,7 +113,7 @@
             <input type="text" name="fecha_aproximada">
             <br><br>
             <label>Cuéntanos qué ocurrió, con tus propias palabras:</label>
-            <textarea name="experiencia"></textarea>
+            <textarea name="experiencia" required></textarea>
             <br><br>
             <label>¿Cuándo comenzaste a pensar que lo ocurrido era inexplicable?</label>
             <textarea name="momento_inexplicable"></textarea>
@@ -119,16 +122,19 @@
             <textarea name="informacion_adicional"></textarea>
             <br><br>
             <label>¿Tienes algún material adicional relacionado con tu experiencia?</label>
-            <select name="material">
+            <select name="material" required>
+            <option value="">Selecciona una opción</option>
             <option>Fotografía</option>
             <option>Video</option>
             <option>Audio</option>
             <option>Documento</option>
+            <option>Otro</option>
             <option>Ninguno</option>
             </select>
             <br><br>
             <label>¿Qué autorizas que hagamos con tu experiencia?</label>
-            <select name="autorizacion">
+            <select name="autorizacion" required>
+                <option value="">Selecciona una opción</option>
                 <option>Publicar en el archivo público</option>
                 <option>Considerarla para el libro</option>
                 <option>Publicar en el archivo y considerarla para el libro</option>
@@ -136,7 +142,8 @@
             </select>
             <br><br>
             <label>¿Autorizas correcciones de redacción sin cambiar el sentido de tu experiencia?</label>
-            <select name="edicion">
+            <select name="edicion" required>
+                <option value="">Selecciona una opción</option>
                 <option>Sí, autorizo</option>
                 <option>No autorizo</option>
             </select>
